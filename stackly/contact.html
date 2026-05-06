@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Stackly for enterprise IT services, managed support, cloud migration, security, DevOps, analytics, and custom software development.">
+  <meta property="og:title" content="Contact Stackly | Enterprise IT Services">
+  <meta property="og:description" content="Reach Stackly sales, support, and delivery teams for IT consulting and managed services.">
+  <title>Contact Stackly | Enterprise IT Services</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "What regions does Stackly support?", "acceptedAnswer": {"@type": "Answer", "text": "Stackly supports remote and hybrid IT engagements across North America, Europe, and Asia."}},
+        {"@type": "Question", "name": "How quickly will Stackly respond?", "acceptedAnswer": {"@type": "Answer", "text": "Sales inquiries receive a same-business-day response. Critical support requests follow the contracted SLA."}}
+      ]
+    }
+  </script>
+</head>
+<body data-page="contact">
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="index.html" aria-label="Stackly home"><span class="logo-mark">S</span><span>Stackly</span></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span class="menu-bar" aria-hidden="true"></span>
+        <span class="menu-bar" aria-hidden="true"></span>
+        <span class="menu-bar" aria-hidden="true"></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="services.html" data-nav="services">Services</a></li>
+          <li><a href="about.html" data-nav="about">About</a></li>
+          <li><a href="portfolio.html" data-nav="portfolio">Portfolio</a></li>
+          <li><a href="blog.html" data-nav="blog">Blog</a></li>
+          <li><a href="pricing.html" data-nav="pricing">Pricing</a></li>
+          <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions" id="authArea"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero page-fade">
+      <p class="eyebrow">Contact</p>
+      <h1>Talk with Stackly about your next IT priority.</h1>
+      <p>Tell us what you need, from managed services and cloud migration to security, DevOps, analytics, or custom development.</p>
+    </section>
+
+    <section class="section contact-layout enhanced-contact">
+      <form class="form-card contact-form" id="contactForm" novalidate>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="contactName">Full Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="contactName" name="name" placeholder="Your name" required>
+            <small class="error-message"></small>
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email <span aria-hidden="true">*</span></label>
+            <input type="email" id="contactEmail" name="email" placeholder="you@example.com" required>
+            <small class="error-message"></small>
+          </div>
+          <div class="form-group">
+            <label for="contactPhone">Phone</label>
+            <input type="tel" id="contactPhone" name="phone" placeholder="+1 555 010 7788">
+            <small class="error-message"></small>
+          </div>
+          <div class="form-group">
+            <label for="contactCompany">Company</label>
+            <input type="text" id="contactCompany" name="company" placeholder="Company name">
+            <small class="error-message"></small>
+          </div>
+          <div class="form-group">
+            <label for="serviceInterest">Service Interest <span aria-hidden="true">*</span></label>
+            <select id="serviceInterest" name="service" required>
+              <option value="">Select a service</option>
+              <option>Cloud Migration</option>
+              <option>Managed Services</option>
+              <option>Security and Compliance</option>
+              <option>DevOps Automation</option>
+              <option>Data Analytics and BI</option>
+              <option>Custom Software Development</option>
+              <option>Database Management</option>
+              <option>Disaster Recovery</option>
+              <option>IT Consulting</option>
+              <option>24/7 Technical Support</option>
+              <option>Starter Pack</option>
+              <option>Professional Pack</option>
+              <option>Enterprise Pack</option>
+            </select>
+            <small class="error-message"></small>
+          </div>
+          <div class="form-group">
+            <label for="budgetRange">Budget Range</label>
+            <select id="budgetRange" name="budget">
+              <option value="">Select range</option>
+              <option>Under $10,000</option>
+              <option>$10,000 - $50,000</option>
+              <option>$50,000 - $150,000</option>
+              <option>$150,000+</option>
+              <option>Monthly managed service plan</option>
+            </select>
+          </div>
+          <div class="form-group full-span">
+            <label for="contactMessage">Message <span aria-hidden="true">*</span></label>
+            <textarea id="contactMessage" name="message" rows="6" placeholder="Project goals, timeline, current challenges, or support needs" required></textarea>
+            <small class="error-message"></small>
+          </div>
+          <div class="form-group">
+            <label for="attachment">Attachment</label>
+            <input type="file" id="attachment" name="attachment">
+            <small class="form-hint">Optional: PDF, brief, requirements, or architecture notes.</small>
+          </div>
+          <div class="form-group checkbox-group">
+            <label><input type="checkbox" id="recaptchaCheck" required> I am not a robot <span aria-hidden="true">*</span></label>
+            <small class="error-message"></small>
+          </div>
+          <div class="form-group checkbox-group full-span">
+            <label><input type="checkbox" id="newsletter" name="newsletter"> Subscribe to Stackly IT insights</label>
+          </div>
+        </div>
+        <button class="btn primary full" type="submit">Send Message</button>
+        <p class="form-status" id="contactStatus" role="status"></p>
+      </form>
+
+      <aside class="contact-panel">
+        <p class="eyebrow">Response Promise</p>
+        <h2>Same-business-day response for new inquiries.</h2>
+        <p>Critical support requests follow the SLA in your managed service agreement. New project inquiries receive a response within one business day.</p>
+        <div class="response-grid">
+          <div><strong>Sales</strong><a href="mailto:sales@stackly.example">sales@stackly.example</a></div>
+          <div><strong>Support</strong><a href="mailto:support@stackly.example">support@stackly.example</a></div>
+          <div><strong>General</strong><a href="mailto:hello@stackly.example">hello@stackly.example</a></div>
+          <div><strong>Phone</strong><a href="tel:+15550107788">+1 555 010 7788</a></div>
+        </div>
+        <div class="urgency-card">
+          <strong>Critical issue?</strong>
+          <span>Use your contracted escalation channel for 24/7 incident response.</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section muted" aria-labelledby="channels-title">
+      <div class="section-heading center">
+        <p class="eyebrow">Communication Channels</p>
+        <h2 id="channels-title">Choose the fastest path for your request.</h2>
+      </div>
+      <div class="channel-grid">
+        <a href="tel:+15550107788"><span class="channel-icon phone"></span><strong>Call</strong><small>+1 555 010 7788</small></a>
+        <a href="mailto:sales@stackly.example"><span class="channel-icon mail"></span><strong>Email Sales</strong><small>sales@stackly.example</small></a>
+        <a href="mailto:support@stackly.example"><span class="channel-icon support"></span><strong>Support</strong><small>support@stackly.example</small></a>
+        <a href="https://wa.me/15550107788"><span class="channel-icon chat"></span><strong>WhatsApp</strong><small>Message delivery team</small></a>
+        <a href="https://www.linkedin.com"><span class="channel-icon linkedin"></span><strong>LinkedIn</strong><small>Connect with Stackly</small></a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="locations-title">
+      <div class="section-heading">
+        <p class="eyebrow">Office Locations</p>
+        <h2 id="locations-title">Remote-first delivery with regional coordination hubs.</h2>
+      </div>
+      <div class="location-grid">
+        <article class="location-card">
+          <h3>Bengaluru Delivery Hub</h3>
+          <p>Indiranagar, Bengaluru, Karnataka 560038, India</p>
+          <p>Hours: Monday to Friday, 9:00 AM - 6:00 PM IST</p>
+          <iframe title="Map of Bengaluru office" src="https://www.google.com/maps?q=Indiranagar%20Bengaluru&output=embed" loading="lazy"></iframe>
+          <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Indiranagar%20Bengaluru">Get Directions</a>
+        </article>
+        <article class="location-card">
+          <h3>New York Client Office</h3>
+          <p>Manhattan, New York, NY 10001, United States</p>
+          <p>Hours: Monday to Friday, 9:00 AM - 5:00 PM ET</p>
+          <iframe title="Map of New York office" src="https://www.google.com/maps?q=Manhattan%20New%20York&output=embed" loading="lazy"></iframe>
+          <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Manhattan%20New%20York">Get Directions</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section muted" aria-labelledby="contact-faq-title">
+      <div class="section-heading">
+        <p class="eyebrow">FAQ</p>
+        <h2 id="contact-faq-title">Answers before we meet.</h2>
+      </div>
+      <div class="accordion-list">
+        <details><summary>What service areas do you cover?</summary><p>Stackly supports cloud migration, managed infrastructure, security, compliance, DevOps, data analytics, custom development, disaster recovery, consulting, and 24/7 technical support.</p></details>
+        <details><summary>How does pricing work?</summary><p>Managed service packages start with clear monthly tiers. Project pricing depends on scope, timeline, required specialists, and operational risk.</p></details>
+        <details><summary>How long does implementation usually take?</summary><p>Focused assessments can take 1 to 3 weeks. Migration, security, DevOps, and software programs usually range from 4 to 16 weeks depending on complexity.</p></details>
+        <details><summary>Do you provide 24/7 support?</summary><p>Yes. 24/7 support is available in Professional add-ons and Enterprise managed service agreements.</p></details>
+        <details><summary>Can Stackly partner with our internal IT team?</summary><p>Yes. Most engagements use a hybrid operating model where Stackly owns defined outcomes while internal teams retain business and system knowledge.</p></details>
+        <details><summary>Do you support licensing and vendor contracts?</summary><p>We support vendor evaluation, license planning, cloud marketplace guidance, and contract-ready technical scoping.</p></details>
+        <details><summary>Can you handle regulated environments?</summary><p>Yes. Stackly has experience with finance, healthcare, retail, manufacturing, SaaS, education, and enterprise compliance contexts.</p></details>
+        <details><summary>What happens after the form is submitted?</summary><p>You receive an on-screen confirmation, and our team reviews your request to schedule discovery, route support, or prepare a next-step proposal.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <a class="logo footer-logo" href="index.html"><span class="logo-mark">S</span><span>Stackly</span></a>
+      <p>Enterprise IT services, cloud migration, security, automation, and software delivery for ambitious teams.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="blog.html">Blog</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="copyright">(c) 2026 Stackly. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

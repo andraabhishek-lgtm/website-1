@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | Stackly</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="profile">
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="index.html" aria-label="Stackly home"><span class="logo-mark">S</span><span>Stackly</span></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span class="menu-bar" aria-hidden="true"></span>
+        <span class="menu-bar" aria-hidden="true"></span>
+        <span class="menu-bar" aria-hidden="true"></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="services.html" data-nav="services">Services</a></li>
+          <li><a href="about.html" data-nav="about">About</a></li>
+          <li><a href="portfolio.html" data-nav="portfolio">Portfolio</a></li>
+          <li><a href="blog.html" data-nav="blog">Blog</a></li>
+          <li><a href="pricing.html" data-nav="pricing">Pricing</a></li>
+          <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions" id="authArea"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero page-fade">
+      <p class="eyebrow">Client Profile</p>
+      <h1>Your Stackly workspace overview.</h1>
+      <p>Manage account details and review the project support options available to your team.</p>
+    </section>
+
+    <section class="section profile-section">
+      <article class="profile-empty" id="profileGuest">
+        <div>
+          <p class="eyebrow">Account needed</p>
+          <h2>Login to view your profile.</h2>
+          <p>Create an account or login to personalize your Stackly project dashboard.</p>
+        </div>
+        <div class="profile-actions">
+          <a class="btn primary" href="login.html">Login</a>
+          <a class="btn secondary" href="signup.html">Create Account</a>
+        </div>
+      </article>
+
+      <div class="profile-dashboard hidden" id="profileDashboard">
+        <aside class="profile-summary">
+          <div class="avatar profile-avatar" id="profileAvatar">S</div>
+          <h2 id="profileGreeting">Welcome back</h2>
+          <p id="profileEmailText">client@stackly.example</p>
+          <div class="profile-stats">
+            <div>
+              <span>3</span>
+              <p>active tracks</p>
+            </div>
+            <div>
+              <span>12</span>
+              <p>deliverables</p>
+            </div>
+          </div>
+        </aside>
+
+        <form class="form-card profile-form" id="profileForm" novalidate>
+          <h2>Account Details</h2>
+          <div class="form-group">
+            <label for="profileName">Name</label>
+            <input type="text" id="profileName" placeholder="Your name">
+            <small class="error-message"></small>
+          </div>
+          <div class="form-group">
+            <label for="profileEmail">Email</label>
+            <input type="email" id="profileEmail" readonly>
+          </div>
+          <div class="form-group">
+            <label for="profileCompany">Company</label>
+            <input type="text" id="profileCompany" placeholder="Company name">
+          </div>
+          <div class="form-group">
+            <label for="profileRole">Project Role</label>
+            <input type="text" id="profileRole" placeholder="Founder, manager, engineer...">
+          </div>
+          <button class="btn primary full" type="submit">Save Profile</button>
+          <p class="form-status" id="profileStatus" role="status"></p>
+        </form>
+
+        <section class="project-panel workspace-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Workspace Snapshot</p>
+              <h2>Project Status</h2>
+              <p>Track the main stages Stackly uses to move a project from early planning to supported launch.</p>
+            </div>
+            <a class="btn secondary" href="contact.html">Start New Project</a>
+          </div>
+          <div class="status-grid">
+            <article>
+              <span class="status-badge active">Active</span>
+              <h3>Discovery</h3>
+              <p>Goals, users, release scope, and risks are mapped before design begins.</p>
+            </article>
+            <article>
+              <span class="status-badge">Next</span>
+              <h3>Build Sprint</h3>
+              <p>Product screens, data flows, integrations, and QA move into implementation.</p>
+            </article>
+            <article>
+              <span class="status-badge">Ready</span>
+              <h3>Launch Support</h3>
+              <p>Deployment, monitoring, analytics, and handoff keep the release steady.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="project-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Recommended Tracks</p>
+              <h2>Recommended Services</h2>
+              <p>Start with these tracks when you are shaping a new product or improving an existing one.</p>
+            </div>
+          </div>
+          <div class="project-list">
+            <article>
+              <span>01</span>
+              <div>
+                <h3>Product Discovery</h3>
+                <p>Define goals, user flows, and the first release plan.</p>
+                <a href="services.html#software-details">View custom development</a>
+              </div>
+            </article>
+            <article>
+              <span>02</span>
+              <div>
+                <h3>Cloud Readiness</h3>
+                <p>Prepare hosting, monitoring, and deployment workflows.</p>
+                <a href="services.html#cloud-details">View cloud support</a>
+              </div>
+            </article>
+            <article>
+              <span>03</span>
+              <div>
+                <h3>Analytics Setup</h3>
+                <p>Track product health and customer behavior from day one.</p>
+                <a href="services.html#analytics-details">View analytics options</a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <a class="logo footer-logo" href="index.html"><span class="logo-mark">S</span><span>Stackly</span></a>
+      <p>Enterprise IT services, cloud migration, security, automation, and software delivery for ambitious teams.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="blog.html">Blog</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="copyright">(c) 2026 Stackly. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

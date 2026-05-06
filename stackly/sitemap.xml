@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://stackly.example/index.html</loc></url>
+  <url><loc>https://stackly.example/services.html</loc></url>
+  <url><loc>https://stackly.example/about.html</loc></url>
+  <url><loc>https://stackly.example/portfolio.html</loc></url>
+  <url><loc>https://stackly.example/blog.html</loc></url>
+  <url><loc>https://stackly.example/pricing.html</loc></url>
+  <url><loc>https://stackly.example/contact.html</loc></url>
+</urlset>

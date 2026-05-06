@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stackly blog articles on cloud migration, cybersecurity, DevOps, AWS cost optimization, AI/ML, and disaster recovery planning.">
+  <meta property="og:title" content="Blog | Stackly IT Insights">
+  <meta property="og:description" content="Practical enterprise IT guidance from Stackly cloud, security, DevOps, data, and support specialists.">
+  <meta property="og:image" content="assets/photos/blog-cloud.webp">
+  <title>Blog | Stackly IT Insights</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="blog">
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="index.html" aria-label="Stackly home"><span class="logo-mark">S</span><span>Stackly</span></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span class="menu-bar" aria-hidden="true"></span>
+        <span class="menu-bar" aria-hidden="true"></span>
+        <span class="menu-bar" aria-hidden="true"></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="services.html" data-nav="services">Services</a></li>
+          <li><a href="about.html" data-nav="about">About</a></li>
+          <li><a href="portfolio.html" data-nav="portfolio">Portfolio</a></li>
+          <li><a href="blog.html" data-nav="blog">Blog</a></li>
+          <li><a href="pricing.html" data-nav="pricing">Pricing</a></li>
+          <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions" id="authArea"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero page-fade">
+      <p class="eyebrow">Blog</p>
+      <h1>Practical IT insight for teams modernizing with confidence.</h1>
+      <p>Read field-tested guidance on cloud, security, DevOps, cost optimization, AI, and continuity planning.</p>
+      <form class="hero-search" role="search" aria-label="Search blog articles">
+        <label class="sr-only" for="blogSearch">Search articles</label>
+        <input type="search" id="blogSearch" placeholder="Search cloud, security, AI, DevOps..." autocomplete="off">
+      </form>
+    </section>
+
+    <section class="section compact-top" aria-labelledby="blog-grid-title">
+      <div class="toolbar">
+        <div class="filter-bar" aria-label="Filter articles">
+          <button class="filter-btn active" type="button" data-filter="all">All</button>
+          <button class="filter-btn" type="button" data-filter="Cloud Technology">Cloud Technology</button>
+          <button class="filter-btn" type="button" data-filter="Security & Compliance">Security</button>
+          <button class="filter-btn" type="button" data-filter="DevOps & Automation">DevOps</button>
+          <button class="filter-btn" type="button" data-filter="Cost Optimization">Cost</button>
+          <button class="filter-btn" type="button" data-filter="AI & Innovation">AI</button>
+          <button class="filter-btn" type="button" data-filter="Best Practices">Best Practices</button>
+        </div>
+        <label class="sort-control">Sort
+          <select id="blogSort" aria-label="Sort blog articles">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+            <option value="popular">Most read</option>
+          </select>
+        </label>
+      </div>
+      <h2 class="sr-only" id="blog-grid-title">Articles</h2>
+      <div class="blog-grid" id="blogGrid">
+        <article class="blog-card" data-category="Cloud Technology" data-date="2024-12-18" data-popularity="92" data-keywords="cloud migration strategies 2024 lift shift refactor rebuild">
+          <img src="assets/photos/blog-cloud.webp" alt="Modern cloud infrastructure visualization" loading="lazy">
+          <div class="blog-card-body">
+            <span class="category-tag">Cloud Technology</span>
+            <h2>Cloud Migration Strategies for 2024</h2>
+            <p>Compare migration patterns, timelines, cost considerations, and the operating model changes that make cloud adoption stick.</p>
+            <div class="article-meta"><img src="assets/photos/team-rahul.webp" alt="Rahul Iyer author avatar" loading="lazy"><span>Rahul Iyer</span><time datetime="2024-12-18">Dec 18, 2024</time><span>9 min read</span></div>
+            <a class="btn secondary" href="#article-cloud">Read More</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="Security & Compliance" data-date="2024-11-26" data-popularity="88" data-keywords="cybersecurity enterprise environments compliance iso hipaa gdpr">
+          <img src="assets/photos/blog-cybersecurity.webp" alt="Cybersecurity operations and encrypted systems" loading="lazy">
+          <div class="blog-card-body">
+            <span class="category-tag">Security &amp; Compliance</span>
+            <h2>The Ultimate Guide to Cybersecurity in Enterprise Environments</h2>
+            <p>Build a defense program around identity, data protection, monitoring, compliance evidence, and continuous security operations.</p>
+            <div class="article-meta"><img src="assets/photos/team-maya.webp" alt="Maya Shah author avatar" loading="lazy"><span>Maya Shah</span><time datetime="2024-11-26">Nov 26, 2024</time><span>12 min read</span></div>
+            <a class="btn secondary" href="#article-security">Read More</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="DevOps & Automation" data-date="2024-10-14" data-popularity="81" data-keywords="devops best practices ci cd infrastructure as code automation">
+          <img src="assets/photos/blog-devops.webp" alt="Developer working with DevOps automation code" loading="lazy">
+          <div class="blog-card-body">
+            <span class="category-tag">DevOps &amp; Automation</span>
+            <h2>DevOps Best Practices: Accelerating Development Cycles</h2>
+            <p>Use CI/CD, infrastructure as code, release safety, and collaboration rituals to move faster without creating operational risk.</p>
+            <div class="article-meta"><img src="assets/photos/team-daniel.webp" alt="Daniel Brooks author avatar" loading="lazy"><span>Daniel Brooks</span><time datetime="2024-10-14">Oct 14, 2024</time><span>10 min read</span></div>
+            <a class="btn secondary" href="#article-devops">Read More</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="Cost Optimization" data-date="2024-09-05" data-popularity="79" data-keywords="aws cost optimization reserved instances auto scaling monitoring alerts">
+          <img src="assets/photos/blog-cost.webp" alt="Cloud cost analytics dashboard" loading="lazy">
+          <div class="blog-card-body">
+            <span class="category-tag">Cost Optimization</span>
+            <h2>Cost Optimization in AWS: Proven Strategies to Reduce Cloud Spend</h2>
+            <p>Find the practical savings hidden in compute plans, unused resources, database choices, autoscaling, and cost observability.</p>
+            <div class="article-meta"><img src="assets/photos/team-vikram.webp" alt="Vikram Rao author avatar" loading="lazy"><span>Vikram Rao</span><time datetime="2024-09-05">Sep 5, 2024</time><span>8 min read</span></div>
+            <a class="btn secondary" href="#article-cost">Read More</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="AI & Innovation" data-date="2024-08-22" data-popularity="85" data-keywords="ai machine learning business operations data quality ethical considerations roi">
+          <img src="assets/photos/blog-ai.webp" alt="Artificial intelligence and machine learning visualization" loading="lazy">
+          <div class="blog-card-body">
+            <span class="category-tag">AI &amp; Innovation</span>
+            <h2>AI and Machine Learning: Transforming Business Operations</h2>
+            <p>Turn AI ideas into governed workflows by focusing on data readiness, model validation, ethical use, and measurable business value.</p>
+            <div class="article-meta"><img src="assets/photos/team-nora.webp" alt="Nora Lee author avatar" loading="lazy"><span>Nora Lee</span><time datetime="2024-08-22">Aug 22, 2024</time><span>11 min read</span></div>
+            <a class="btn secondary" href="#article-ai">Read More</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="Best Practices" data-date="2024-07-16" data-popularity="76" data-keywords="disaster recovery planning business continuity rto rpo backup testing">
+          <img src="assets/photos/blog-dr.webp" alt="Data center and backup infrastructure" loading="lazy">
+          <div class="blog-card-body">
+            <span class="category-tag">Best Practices</span>
+            <h2>Disaster Recovery Planning: Ensuring Business Continuity</h2>
+            <p>Design recovery goals, backup strategies, testing routines, and continuity procedures that keep critical services available.</p>
+            <div class="article-meta"><img src="assets/photos/team-aisha.webp" alt="Aisha Menon author avatar" loading="lazy"><span>Aisha Menon</span><time datetime="2024-07-16">Jul 16, 2024</time><span>9 min read</span></div>
+            <a class="btn secondary" href="#article-dr">Read More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section muted article-section" aria-labelledby="articles-title">
+      <div class="section-heading">
+        <p class="eyebrow">Article Library</p>
+        <h2 id="articles-title">Full article templates with share tools and related reading.</h2>
+      </div>
+
+      <article class="blog-post-full" id="article-cloud">
+        <img class="article-hero" src="assets/photos/blog-cloud.webp" alt="Cloud migration infrastructure" loading="lazy">
+        <div class="article-meta wide"><span>Dec 18, 2024</span><span>Rahul Iyer</span><span>9 min read</span><span>Cloud Technology</span></div>
+        <h2>Cloud Migration Strategies for 2024</h2>
+        <nav class="toc" aria-label="Table of contents"><a href="#cloud-benefits">Benefits</a><a href="#cloud-patterns">Migration Patterns</a><a href="#cloud-costs">Costs</a><a href="#cloud-timeline">Timeline</a></nav>
+        <h3 id="cloud-benefits">Benefits of cloud migration</h3>
+        <p>Cloud migration is not simply a hosting decision. Done well, it improves release speed, resilience, observability, and financial transparency. Organizations gain elastic capacity, managed services, stronger automation options, and faster experimentation. The strongest business cases link migration to a measurable outcome such as shorter deployment cycles, lower recovery risk, improved geographic reach, or retiring expensive legacy infrastructure.</p>
+        <h3 id="cloud-patterns">Lift-shift, refactor, and rebuild</h3>
+        <p>Lift-shift works when speed matters and workloads are stable. Refactoring is useful when teams can modernize selected services without rewriting the entire application. Rebuild should be reserved for systems where legacy constraints prevent the business model from evolving. Most mature migration programs blend these approaches by workload instead of forcing one pattern across every system.</p>
+        <h3 id="cloud-costs">Cost considerations</h3>
+        <p>Cloud cost control starts before migration. Tagging, budget alerts, instance right-sizing, storage lifecycle policies, and reserved capacity planning should be part of the landing zone. After migration, teams should review utilization weekly until the new operating model stabilizes. The biggest savings usually come from eliminating idle resources, choosing managed services wisely, and scaling down non-production environments.</p>
+        <h3 id="cloud-timeline">Timeline expectations</h3>
+        <p>A practical migration timeline starts with discovery, dependency mapping, landing zone design, pilot migration, workload waves, and optimization. Smaller estates can move in weeks. Regulated or highly integrated environments often need several months. The most reliable plans include rollback criteria, business validation steps, and post-migration hardening.</p>
+        <div class="article-callout">Need help choosing a migration strategy? <a href="contact.html?service=Cloud%20Migration">Book a cloud readiness session.</a></div>
+        <div class="share-row"><button type="button" data-share="linkedin">LinkedIn</button><button type="button" data-share="twitter">Twitter</button><button type="button" data-share="facebook">Facebook</button><button type="button" data-share="email">Email</button><button type="button" data-copy-link>Copy Link</button></div>
+        <aside class="author-box"><img src="assets/photos/team-rahul.webp" alt="Rahul Iyer" loading="lazy"><div><h3>Rahul Iyer</h3><p>Rahul leads Stackly cloud platform programs and specializes in landing zones, Kubernetes, and migration risk reduction.</p></div></aside>
+      </article>
+
+      <article class="blog-post-full" id="article-security">
+        <img class="article-hero" src="assets/photos/blog-cybersecurity.webp" alt="Enterprise cybersecurity monitoring" loading="lazy">
+        <div class="article-meta wide"><span>Nov 26, 2024</span><span>Maya Shah</span><span>12 min read</span><span>Security &amp; Compliance</span></div>
+        <h2>The Ultimate Guide to Cybersecurity in Enterprise Environments</h2>
+        <nav class="toc" aria-label="Table of contents"><a href="#security-threats">Threat Landscape</a><a href="#security-frameworks">Frameworks</a><a href="#security-practices">Best Practices</a><a href="#security-audit">Auditing</a></nav>
+        <h3 id="security-threats">Current threat landscape</h3>
+        <p>Enterprise security teams face credential theft, ransomware, supply chain compromise, cloud misconfiguration, and insider risk. The pattern is clear: attackers exploit weak identity, poor monitoring, unpatched assets, and unclear incident ownership. A modern program must reduce attack surface while improving detection and response speed.</p>
+        <h3 id="security-frameworks">Essential security frameworks</h3>
+        <p>ISO 27001, SOC 2, NIST CSF, HIPAA, and GDPR all emphasize governance, access control, data protection, incident response, and continuous improvement. The right framework depends on industry, geography, and customer expectations. Frameworks should create clarity, not paperwork that nobody uses.</p>
+        <h3 id="security-practices">Implementation best practices</h3>
+        <p>Start with identity and inventory. Enforce MFA, least privilege, privileged access review, endpoint protection, logging, and patch cadence. Harden cloud accounts with guardrails, network segmentation, encryption, and automated configuration checks. Build runbooks for likely incidents and rehearse them before pressure arrives.</p>
+        <h3 id="security-audit">Regular auditing and updates</h3>
+        <p>Security controls degrade when ownership is unclear. Monthly reviews should check open risks, stale access, patch exceptions, alert quality, backup evidence, and incident lessons. Quarterly executive reporting should translate technical posture into business risk.</p>
+        <div class="article-callout">Need audit-ready controls? <a href="contact.html?service=Security%20and%20Compliance">Talk with a security specialist.</a></div>
+        <div class="share-row"><button type="button" data-share="linkedin">LinkedIn</button><button type="button" data-share="twitter">Twitter</button><button type="button" data-share="facebook">Facebook</button><button type="button" data-share="email">Email</button><button type="button" data-copy-link>Copy Link</button></div>
+        <aside class="author-box"><img src="assets/photos/team-maya.webp" alt="Maya Shah" loading="lazy"><div><h3>Maya Shah</h3><p>Maya directs Stackly security and compliance work across control mapping, cloud hardening, and incident readiness.</p></div></aside>
+      </article>
+
+      <article class="blog-post-full" id="article-devops">
+        <img class="article-hero" src="assets/photos/blog-devops.webp" alt="DevOps pipeline code" loading="lazy">
+        <div class="article-meta wide"><span>Oct 14, 2024</span><span>Daniel Brooks</span><span>10 min read</span><span>DevOps &amp; Automation</span></div>
+        <h2>DevOps Best Practices: Accelerating Development Cycles</h2>
+        <nav class="toc" aria-label="Table of contents"><a href="#devops-principles">Principles</a><a href="#devops-cicd">CI/CD</a><a href="#devops-iac">Infrastructure as Code</a><a href="#devops-tools">Collaboration</a></nav>
+        <h3 id="devops-principles">DevOps principles</h3>
+        <p>Effective DevOps is not a tooling project. It is a delivery model that connects engineering, operations, security, and business stakeholders around repeatable release practices. The goal is to reduce handoffs, shrink feedback loops, and make production changes observable and reversible.</p>
+        <h3 id="devops-cicd">CI/CD implementation</h3>
+        <p>Strong pipelines include source control policy, automated tests, artifact creation, environment promotion, security scanning, approval gates, deployment automation, and rollback steps. A pipeline should make the safe path the easiest path.</p>
+        <pre><code>pipeline:
+  test -> build -> scan -> deploy-staging -> approve -> deploy-prod -> verify</code></pre>
+        <h3 id="devops-iac">Infrastructure as Code benefits</h3>
+        <p>Infrastructure as code makes environments reproducible, reviewable, and easier to recover. Versioned templates also reduce configuration drift and allow teams to test infrastructure changes before production rollout.</p>
+        <h3 id="devops-tools">Team collaboration tools</h3>
+        <p>Use shared dashboards, incident channels, release notes, and runbooks. Automation works best when communication is equally structured. Every release should answer what changed, how it was tested, how it is monitored, and how it can be rolled back.</p>
+        <div class="article-callout">Want safer deployments? <a href="contact.html?service=DevOps%20Automation">Review your delivery pipeline.</a></div>
+        <div class="share-row"><button type="button" data-share="linkedin">LinkedIn</button><button type="button" data-share="twitter">Twitter</button><button type="button" data-share="facebook">Facebook</button><button type="button" data-share="email">Email</button><button type="button" data-copy-link>Copy Link</button></div>
+        <aside class="author-box"><img src="assets/photos/team-daniel.webp" alt="Daniel Brooks" loading="lazy"><div><h3>Daniel Brooks</h3><p>Daniel designs DevOps platforms, infrastructure automation, and release governance systems for Stackly clients.</p></div></aside>
+      </article>
+
+      <article class="blog-post-full" id="article-cost">
+        <img class="article-hero" src="assets/photos/blog-cost.webp" alt="AWS cloud cost dashboard" loading="lazy">
+        <div class="article-meta wide"><span>Sep 5, 2024</span><span>Vikram Rao</span><span>8 min read</span><span>Cost Optimization</span></div>
+        <h2>Cost Optimization in AWS: Proven Strategies to Reduce Cloud Spend</h2>
+        <nav class="toc" aria-label="Table of contents"><a href="#cost-capacity">Capacity</a><a href="#cost-cleanup">Cleanup</a><a href="#cost-database">Database</a><a href="#cost-alerts">Monitoring</a></nav>
+        <h3 id="cost-capacity">Reserved instances vs on-demand</h3>
+        <p>Stable workloads should be evaluated for savings plans or reserved instances. On-demand capacity still matters for variable workloads and experimentation, but mature environments should not leave predictable usage entirely on premium pricing.</p>
+        <h3 id="cost-cleanup">Unused resource cleanup</h3>
+        <p>Idle volumes, old snapshots, oversized instances, unattached IPs, and abandoned development environments can quietly inflate cloud spend. Tagging and automated cleanup policies help teams find ownership and remove waste without creating risk.</p>
+        <h3 id="cost-database">Database optimization</h3>
+        <p>Database cost often grows faster than compute cost. Review storage classes, index health, read replicas, backup retention, and managed service sizing. Small query and schema improvements can delay expensive scaling moves.</p>
+        <h3 id="cost-alerts">Monitoring and alerts</h3>
+        <p>Use budget alerts, anomaly detection, and unit economics dashboards. Cost reports should connect spend to business context: transactions, users, revenue, environments, and service owners.</p>
+        <div class="comparison-mini"><span>Example: $14,000 monthly baseline</span><span>38% optimization target</span><span>$5,320 monthly savings</span></div>
+        <div class="share-row"><button type="button" data-share="linkedin">LinkedIn</button><button type="button" data-share="twitter">Twitter</button><button type="button" data-share="facebook">Facebook</button><button type="button" data-share="email">Email</button><button type="button" data-copy-link>Copy Link</button></div>
+        <aside class="author-box"><img src="assets/photos/team-vikram.webp" alt="Vikram Rao" loading="lazy"><div><h3>Vikram Rao</h3><p>Vikram leads managed services and cost optimization programs with a focus on reporting, SLAs, and accountability.</p></div></aside>
+      </article>
+
+      <article class="blog-post-full" id="article-ai">
+        <img class="article-hero" src="assets/photos/blog-ai.webp" alt="AI and machine learning systems" loading="lazy">
+        <div class="article-meta wide"><span>Aug 22, 2024</span><span>Nora Lee</span><span>11 min read</span><span>AI &amp; Innovation</span></div>
+        <h2>AI and Machine Learning: Transforming Business Operations</h2>
+        <nav class="toc" aria-label="Table of contents"><a href="#ai-use">Applications</a><a href="#ai-data">Data Quality</a><a href="#ai-validation">Validation</a><a href="#ai-ethics">Ethics</a></nav>
+        <h3 id="ai-use">AI/ML applications in business</h3>
+        <p>Useful AI projects usually start with a repetitive decision, a messy information workflow, or a forecasting problem. Common examples include demand prediction, document classification, customer support assistance, anomaly detection, and personalized recommendations.</p>
+        <h3 id="ai-data">Data preparation and quality</h3>
+        <p>Data readiness determines whether a model can be trusted. Teams need ownership, lineage, privacy rules, labeling standards, and validation checks before training. Without this foundation, AI pilots often look impressive in demos and fail in production.</p>
+        <h3 id="ai-validation">Model training and validation</h3>
+        <p>Validation should include accuracy, bias checks, performance under edge cases, drift monitoring, and human review. A business workflow should define when to trust the model, when to escalate, and when to retrain.</p>
+        <h3 id="ai-ethics">Ethical considerations and ROI</h3>
+        <p>Responsible AI means transparency, consent, auditability, and clear limits. ROI should be measured in cycle time, revenue lift, cost reduction, error reduction, or improved customer experience, not only model metrics.</p>
+        <div class="article-callout">Have an AI use case? <a href="contact.html?service=AI%20and%20Analytics">Validate it with Stackly.</a></div>
+        <div class="share-row"><button type="button" data-share="linkedin">LinkedIn</button><button type="button" data-share="twitter">Twitter</button><button type="button" data-share="facebook">Facebook</button><button type="button" data-share="email">Email</button><button type="button" data-copy-link>Copy Link</button></div>
+        <aside class="author-box"><img src="assets/photos/team-nora.webp" alt="Nora Lee" loading="lazy"><div><h3>Nora Lee</h3><p>Nora leads Stackly data and AI programs, helping teams turn models into governed business workflows.</p></div></aside>
+      </article>
+
+      <article class="blog-post-full" id="article-dr">
+        <img class="article-hero" src="assets/photos/blog-dr.webp" alt="Disaster recovery data center systems" loading="lazy">
+        <div class="article-meta wide"><span>Jul 16, 2024</span><span>Aisha Menon</span><span>9 min read</span><span>Best Practices</span></div>
+        <h2>Disaster Recovery Planning: Ensuring Business Continuity</h2>
+        <nav class="toc" aria-label="Table of contents"><a href="#dr-rto">RTO/RPO</a><a href="#dr-backup">Backups</a><a href="#dr-testing">Testing</a><a href="#dr-runbooks">Runbooks</a></nav>
+        <h3 id="dr-rto">RTO and RPO definitions</h3>
+        <p>Recovery Time Objective defines how quickly a service must return. Recovery Point Objective defines how much data loss is acceptable. These targets should be set by business impact, not by technical habit.</p>
+        <h3 id="dr-backup">Backup strategies</h3>
+        <p>Backup design should consider frequency, retention, encryption, immutability, geographic separation, restore priority, and ownership. A backup that has never been restored is only a hope, not a control.</p>
+        <h3 id="dr-testing">Testing procedures</h3>
+        <p>Regular recovery tests reveal gaps in documentation, credentials, dependencies, and communication. Start with tabletop exercises, then perform technical restores, then graduate to failover simulations for critical systems.</p>
+        <h3 id="dr-runbooks">Recovery procedures</h3>
+        <p>Runbooks should explain who declares an incident, who communicates, who restores systems, how decisions are logged, and how business stakeholders validate recovery. After every test or incident, update the runbook with lessons learned.</p>
+        <div class="comparison-mini"><span>Classify services</span><span>Set RTO/RPO</span><span>Test restores</span><span>Review quarterly</span></div>
+        <div class="share-row"><button type="button" data-share="linkedin">LinkedIn</button><button type="button" data-share="twitter">Twitter</button><button type="button" data-share="facebook">Facebook</button><button type="button" data-share="email">Email</button><button type="button" data-copy-link>Copy Link</button></div>
+        <aside class="author-box"><img src="assets/photos/team-aisha.webp" alt="Aisha Menon" loading="lazy"><div><h3>Aisha Menon</h3><p>Aisha works with executive teams on IT governance, continuity planning, and transformation operating models.</p></div></aside>
+      </article>
+
+      <div class="related-articles">
+        <h2>Related Articles</h2>
+        <div class="mini-card-grid">
+          <a href="#article-cloud">Cloud Migration Strategies for 2024</a>
+          <a href="#article-security">Enterprise Cybersecurity Guide</a>
+          <a href="#article-devops">DevOps Best Practices</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <a class="logo footer-logo" href="index.html"><span class="logo-mark">S</span><span>Stackly</span></a>
+      <p>Enterprise IT services, cloud migration, security, automation, and software delivery for ambitious teams.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="blog.html">Blog</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="copyright">(c) 2026 Stackly. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

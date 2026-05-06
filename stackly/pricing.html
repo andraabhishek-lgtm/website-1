@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Transparent Stackly managed IT pricing for starter, professional, and enterprise service plans with add-ons and comparison table.">
+  <meta property="og:title" content="Pricing | Stackly IT Services">
+  <meta property="og:description" content="Compare managed IT service packages, add-ons, SLAs, and enterprise support options.">
+  <title>Pricing | Stackly IT Services</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can we switch plans later?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Stackly supports upgrades and downgrades at monthly renewal checkpoints after reviewing service coverage."}
+        },
+        {
+          "@type": "Question",
+          "name": "Is there an annual discount?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Annual billing can save 20 percent on eligible fixed monthly service plans."}
+        }
+      ]
+    }
+  </script>
+</head>
+<body data-page="pricing">
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="index.html" aria-label="Stackly home"><span class="logo-mark">S</span><span>Stackly</span></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span class="menu-bar" aria-hidden="true"></span>
+        <span class="menu-bar" aria-hidden="true"></span>
+        <span class="menu-bar" aria-hidden="true"></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="services.html" data-nav="services">Services</a></li>
+          <li><a href="about.html" data-nav="about">About</a></li>
+          <li><a href="portfolio.html" data-nav="portfolio">Portfolio</a></li>
+          <li><a href="blog.html" data-nav="blog">Blog</a></li>
+          <li><a href="pricing.html" data-nav="pricing">Pricing</a></li>
+          <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions" id="authArea"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero page-fade">
+      <p class="eyebrow">Pricing</p>
+      <h1>Managed IT plans that make scope, support, and SLAs clear.</h1>
+      <p>Start with a package, add specialist coverage when needed, and scale service depth as your environment grows.</p>
+    </section>
+
+    <section class="section compact-top" aria-labelledby="pricing-title">
+      <div class="discount-banner">
+        <div>
+          <p class="eyebrow">Annual Discount</p>
+          <h2 id="pricing-title">Save 20% with annual billing.</h2>
+        </div>
+        <label class="billing-toggle">
+          <span>Monthly</span>
+          <input type="checkbox" id="billingToggle" aria-label="Toggle annual pricing">
+          <span class="toggle-slider" aria-hidden="true"></span>
+          <span>Annual</span>
+        </label>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="pricing-card starter">
+          <p class="eyebrow">Starter Pack</p>
+          <h2>$<span class="price-value" data-monthly="4999">4,999</span><small>/month</small></h2>
+          <p>Best for small businesses and startups that need reliable managed support without an enterprise operating model.</p>
+          <ul class="feature-list">
+            <li>Up to 5 users</li>
+            <li>1 dedicated support engineer</li>
+            <li>40 hours/month managed services</li>
+            <li>Standard response time: 24 hours</li>
+            <li>Monthly reporting</li>
+            <li>99.5% uptime SLA</li>
+            <li>Basic security monitoring</li>
+            <li>Email support</li>
+          </ul>
+          <a class="btn primary" href="contact.html?service=Starter%20Pack">Get Started</a>
+        </article>
+
+        <article class="pricing-card professional featured">
+          <span class="popular-badge">Most Popular</span>
+          <p class="eyebrow">Professional Pack</p>
+          <h2>$<span class="price-value" data-monthly="9999">9,999</span><small>/month</small></h2>
+          <p>Best for growing companies that need priority support, deeper optimization, and recurring strategy alignment.</p>
+          <ul class="feature-list">
+            <li>Up to 15 users</li>
+            <li>2 dedicated support engineers</li>
+            <li>80 hours/month managed services</li>
+            <li>Priority response time: 4 hours</li>
+            <li>Weekly reporting</li>
+            <li>99.9% uptime SLA</li>
+            <li>Advanced security monitoring</li>
+            <li>Phone + Email support</li>
+            <li>Quarterly strategy review</li>
+            <li>Infrastructure optimization</li>
+          </ul>
+          <a class="btn primary" href="contact.html?service=Professional%20Pack">Get Started</a>
+        </article>
+
+        <article class="pricing-card enterprise">
+          <p class="eyebrow">Enterprise Pack</p>
+          <h2>Custom<small> pricing</small></h2>
+          <p>Best for large enterprises with complex environments, compliance requirements, and critical response needs.</p>
+          <ul class="feature-list">
+            <li>Unlimited users</li>
+            <li>Dedicated account manager</li>
+            <li>Unlimited managed services</li>
+            <li>24/7 on-call support, 1-hour response</li>
+            <li>Daily reporting and analytics</li>
+            <li>99.99% uptime SLA</li>
+            <li>Premium security and compliance</li>
+            <li>Phone + Email + Chat support</li>
+            <li>Monthly strategy review</li>
+            <li>Custom integrations</li>
+            <li>Dedicated infrastructure</li>
+          </ul>
+          <a class="btn primary dark" href="contact.html?service=Enterprise%20Pack">Request Quote</a>
+        </article>
+      </div>
+
+      <div class="guarantee-card">
+        <h2>30-day satisfaction guarantee</h2>
+        <p>If onboarding does not meet the agreed service plan, Stackly will work with you on a remediation plan or cancel the engagement without a long-term lock-in.</p>
+      </div>
+    </section>
+
+    <section class="section muted" aria-labelledby="comparison-title">
+      <div class="section-heading">
+        <p class="eyebrow">Comparison</p>
+        <h2 id="comparison-title">Compare support coverage side by side.</h2>
+      </div>
+      <div class="table-wrap">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Starter</th>
+              <th>Professional</th>
+              <th>Enterprise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Dedicated support engineers</td><td>1</td><td>2</td><td>Custom pod</td></tr>
+            <tr><td>Managed service hours</td><td>40/month</td><td>80/month</td><td>Unlimited</td></tr>
+            <tr><td>Response time</td><td>24 hours</td><td>4 hours</td><td>1 hour</td></tr>
+            <tr><td>Uptime SLA</td><td>99.5%</td><td>99.9%</td><td>99.99%</td></tr>
+            <tr><td>Security monitoring</td><td>Basic</td><td>Advanced</td><td>Premium + compliance</td></tr>
+            <tr><td>Phone support</td><td>X</td><td>Included</td><td>Included</td></tr>
+            <tr><td>Chat support</td><td>X</td><td>X</td><td>Included</td></tr>
+            <tr><td>Strategy reviews</td><td>Monthly report</td><td>Quarterly</td><td>Monthly</td></tr>
+            <tr><td>Custom integrations</td><td>X</td><td>Available</td><td>Included</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="addons-title">
+      <div class="section-heading center">
+        <p class="eyebrow">Add-on Services</p>
+        <h2 id="addons-title">Expand any plan with specialist coverage.</h2>
+      </div>
+      <div class="addon-grid">
+        <article><h3>Premium support escalation</h3><p>+$1,000/month</p></article>
+        <article><h3>Dedicated database admin</h3><p>+$2,000/month</p></article>
+        <article><h3>Custom development hours</h3><p>+$150/hour</p></article>
+        <article><h3>Compliance certifications</h3><p>Pricing varies by scope</p></article>
+        <article><h3>Training &amp; documentation</h3><p>+$3,000/month</p></article>
+      </div>
+    </section>
+
+    <section class="section muted" aria-labelledby="pricing-faq-title">
+      <div class="section-heading">
+        <p class="eyebrow">Pricing FAQ</p>
+        <h2 id="pricing-faq-title">Common questions before choosing a plan.</h2>
+      </div>
+      <div class="accordion-list">
+        <details><summary>Can we switch plans later?</summary><p>Yes. Plans can be upgraded or reduced at monthly renewal checkpoints after reviewing support volume, active risks, and committed work.</p></details>
+        <details><summary>Do prices include cloud provider costs?</summary><p>No. Cloud provider invoices, third-party licenses, and marketplace tools are billed separately unless a custom enterprise agreement includes them.</p></details>
+        <details><summary>How does annual billing work?</summary><p>Eligible fixed monthly plans receive a 20% discount when prepaid annually. Add-ons can be billed monthly or annually depending on scope.</p></details>
+        <details><summary>Can we cancel?</summary><p>Starter and Professional plans can be cancelled with 30 days notice. Enterprise contracts follow the service agreement terms.</p></details>
+        <details><summary>Can we upgrade during an incident?</summary><p>Critical escalation can be added immediately when specialist coverage is available. The commercial adjustment is confirmed after stabilization.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <a class="logo footer-logo" href="index.html"><span class="logo-mark">S</span><span>Stackly</span></a>
+      <p>Enterprise IT services, cloud migration, security, automation, and software delivery for ambitious teams.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="blog.html">Blog</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="copyright">(c) 2026 Stackly. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

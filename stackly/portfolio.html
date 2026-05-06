@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Stackly case studies across e-commerce, cloud migration, analytics, security, mobile development, automation, data integration, and AI/ML.">
+  <meta property="og:title" content="Portfolio | Stackly Case Studies">
+  <meta property="og:description" content="See measurable IT outcomes delivered by Stackly across industries and technologies.">
+  <meta property="og:image" content="assets/photos/portfolio-cloud.webp">
+  <title>Portfolio | Stackly Case Studies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="portfolio">
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="index.html" aria-label="Stackly home"><span class="logo-mark">S</span><span>Stackly</span></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span class="menu-bar" aria-hidden="true"></span>
+        <span class="menu-bar" aria-hidden="true"></span>
+        <span class="menu-bar" aria-hidden="true"></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="services.html" data-nav="services">Services</a></li>
+          <li><a href="about.html" data-nav="about">About</a></li>
+          <li><a href="portfolio.html" data-nav="portfolio">Portfolio</a></li>
+          <li><a href="blog.html" data-nav="blog">Blog</a></li>
+          <li><a href="pricing.html" data-nav="pricing">Pricing</a></li>
+          <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions" id="authArea"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero page-fade">
+      <p class="eyebrow">Portfolio</p>
+      <h1>Case studies with measurable technology outcomes.</h1>
+      <p>Explore successful programs across cloud, security, analytics, custom development, and infrastructure modernization.</p>
+    </section>
+
+    <section class="section compact-top" aria-labelledby="portfolio-title">
+      <div class="section-heading">
+        <p class="eyebrow">Featured Projects</p>
+        <h2 id="portfolio-title">From migration strategy to business results.</h2>
+      </div>
+      <div class="toolbar">
+        <div class="filter-bar" aria-label="Filter portfolio">
+          <button class="filter-btn active" type="button" data-filter="all">All</button>
+          <button class="filter-btn" type="button" data-filter="Retail">Retail</button>
+          <button class="filter-btn" type="button" data-filter="Finance">Finance</button>
+          <button class="filter-btn" type="button" data-filter="Healthcare">Healthcare</button>
+          <button class="filter-btn" type="button" data-filter="Manufacturing">Manufacturing</button>
+          <button class="filter-btn" type="button" data-filter="SaaS">SaaS</button>
+        </div>
+        <label class="sort-control">Sort
+          <select id="portfolioSort" aria-label="Sort portfolio projects">
+            <option value="featured">Featured</option>
+            <option value="industry">Industry</option>
+            <option value="impact">Impact</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+        <article class="portfolio-card" data-industry="Retail" data-impact="45" data-title="E-commerce Platform Redesign">
+          <figure>
+            <img src="assets/photos/portfolio-ecommerce.webp" alt="E-commerce dashboard and online shopping workflow" loading="lazy">
+            <figcaption>45% conversion improvement</figcaption>
+          </figure>
+          <div class="portfolio-card-body">
+            <span class="case-label">Retail</span>
+            <h2>E-commerce Platform Redesign</h2>
+            <p>Rebuilt a legacy storefront into a scalable commerce platform with faster checkout, resilient cloud hosting, and analytics-driven merchandising.</p>
+            <div class="tag-list"><span>React</span><span>Node.js</span><span>AWS</span></div>
+            <ul class="result-list"><li>45% conversion lift</li><li>32% faster page loads</li><li>99.95% peak-season uptime</li></ul>
+            <blockquote>"Stackly helped us turn a fragile storefront into a growth engine." <cite>Claire Wong, VP Commerce</cite></blockquote>
+            <div class="rating" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <a class="btn secondary" href="#case-ecommerce">View Case Study</a>
+          </div>
+        </article>
+
+        <article class="portfolio-card" data-industry="Finance" data-impact="60" data-title="Cloud Migration Initiative">
+          <figure>
+            <img src="assets/photos/portfolio-cloud.webp" alt="Cloud infrastructure and server environment" loading="lazy">
+            <figcaption>60% cost reduction</figcaption>
+          </figure>
+          <div class="portfolio-card-body">
+            <span class="case-label">Financial Services</span>
+            <h2>Cloud Migration Initiative</h2>
+            <p>Migrated regulated workloads into a governed AWS environment with Kubernetes orchestration, Terraform automation, and cost controls.</p>
+            <div class="tag-list"><span>AWS</span><span>Kubernetes</span><span>Terraform</span></div>
+            <ul class="result-list"><li>60% cost reduction</li><li>4-hour recovery plan</li><li>Automated audit evidence</li></ul>
+            <blockquote>"We gained cloud flexibility without compromising compliance." <cite>Owen Price, CTO</cite></blockquote>
+            <div class="rating" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <a class="btn secondary" href="#case-cloud">View Case Study</a>
+          </div>
+        </article>
+
+        <article class="portfolio-card" data-industry="Manufacturing" data-impact="30" data-title="Data Analytics Dashboard">
+          <figure>
+            <img src="assets/photos/portfolio-analytics.webp" alt="Analytics dashboard on a workstation" loading="lazy">
+            <figcaption>30% efficiency gain</figcaption>
+          </figure>
+          <div class="portfolio-card-body">
+            <span class="case-label">Manufacturing</span>
+            <h2>Data Analytics Dashboard</h2>
+            <p>Created a real-time operations dashboard that unified production, inventory, and maintenance data for plant leaders.</p>
+            <div class="tag-list"><span>Tableau</span><span>Python</span><span>PostgreSQL</span></div>
+            <ul class="result-list"><li>Real-time insights</li><li>30% efficiency gain</li><li>12 data sources integrated</li></ul>
+            <blockquote>"Decision cycles moved from days to minutes." <cite>Priya Nair, Head of IT</cite></blockquote>
+            <div class="rating" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <a class="btn secondary" href="#case-analytics">View Case Study</a>
+          </div>
+        </article>
+
+        <article class="portfolio-card" data-industry="Healthcare" data-impact="100" data-title="Security Enhancement Project">
+          <figure>
+            <img src="assets/photos/portfolio-security.webp" alt="Cybersecurity monitoring and encrypted systems" loading="lazy">
+            <figcaption>HIPAA compliance achieved</figcaption>
+          </figure>
+          <div class="portfolio-card-body">
+            <span class="case-label">Healthcare</span>
+            <h2>Security Enhancement Project</h2>
+            <p>Implemented layered security controls, encryption workflows, identity review, and compliance reporting for a healthcare provider.</p>
+            <div class="tag-list"><span>OpenStack</span><span>Fortinet</span><span>Encryption</span></div>
+            <ul class="result-list"><li>HIPAA compliance achieved</li><li>82% fewer audit gaps</li><li>Incident playbooks created</li></ul>
+            <blockquote>"The audit team finally had evidence they could trust." <cite>Lina Brooks, COO</cite></blockquote>
+            <div class="rating" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <a class="btn secondary" href="#case-security">View Case Study</a>
+          </div>
+        </article>
+
+        <article class="portfolio-card" data-industry="SaaS" data-impact="100" data-title="Mobile App Development">
+          <figure>
+            <img src="assets/photos/portfolio-mobile.webp" alt="Mobile application interface on a smartphone" loading="lazy">
+            <figcaption>100K+ downloads</figcaption>
+          </figure>
+          <div class="portfolio-card-body">
+            <span class="case-label">SaaS</span>
+            <h2>Mobile App Development</h2>
+            <p>Built a React Native app for customer workflows with Firebase notifications, secure authentication, and usage analytics.</p>
+            <div class="tag-list"><span>React Native</span><span>Firebase</span><span>APIs</span></div>
+            <ul class="result-list"><li>100K+ first-month downloads</li><li>4.8 app rating</li><li>38% support deflection</li></ul>
+            <blockquote>"The app became our primary customer touchpoint faster than expected." <cite>Elena Rossi, Product Director</cite></blockquote>
+            <div class="rating" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <a class="btn secondary" href="#case-mobile">View Case Study</a>
+          </div>
+        </article>
+
+        <article class="portfolio-card" data-industry="SaaS" data-impact="80" data-title="Infrastructure Automation">
+          <figure>
+            <img src="assets/photos/portfolio-automation.webp" alt="Software automation and deployment code on laptop" loading="lazy">
+            <figcaption>80% deployment time reduction</figcaption>
+          </figure>
+          <div class="portfolio-card-body">
+            <span class="case-label">Tech Startup</span>
+            <h2>Infrastructure Automation</h2>
+            <p>Replaced manual deployments with CI/CD pipelines, Dockerized environments, Ansible provisioning, and release observability.</p>
+            <div class="tag-list"><span>Jenkins</span><span>Ansible</span><span>Docker</span></div>
+            <ul class="result-list"><li>80% faster deployments</li><li>Zero manual server steps</li><li>Weekly releases enabled</li></ul>
+            <blockquote>"We stopped fearing release days." <cite>Marcus Kim, VP Engineering</cite></blockquote>
+            <div class="rating" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <a class="btn secondary" href="#case-automation">View Case Study</a>
+          </div>
+        </article>
+
+        <article class="portfolio-card" data-industry="Enterprise" data-impact="100" data-title="Data Migration & Integration">
+          <figure>
+            <img src="assets/photos/portfolio-data.webp" alt="Enterprise team reviewing digital data workflows" loading="lazy">
+            <figcaption>Zero downtime migration</figcaption>
+          </figure>
+          <div class="portfolio-card-body">
+            <span class="case-label">Enterprise</span>
+            <h2>Data Migration &amp; Integration</h2>
+            <p>Moved core data flows into a streaming integration layer with validated mappings, replayable events, and controlled cutover.</p>
+            <div class="tag-list"><span>Apache Kafka</span><span>Python</span><span>Oracle</span></div>
+            <ul class="result-list"><li>Zero downtime migration</li><li>24 systems integrated</li><li>99.99% message reliability</li></ul>
+            <blockquote>"The migration was almost boring, which is exactly what we needed." <cite>Natalie Reed, CIO</cite></blockquote>
+            <div class="rating" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <a class="btn secondary" href="#case-data">View Case Study</a>
+          </div>
+        </article>
+
+        <article class="portfolio-card" data-industry="Retail" data-impact="25" data-title="AI/ML Implementation">
+          <figure>
+            <img src="assets/photos/portfolio-ai.webp" alt="AI and machine learning visualization on digital screen" loading="lazy">
+            <figcaption>25% inventory optimization</figcaption>
+          </figure>
+          <div class="portfolio-card-body">
+            <span class="case-label">Retail Chain</span>
+            <h2>AI/ML Implementation</h2>
+            <p>Created predictive inventory models and replenishment dashboards that connected sales history, seasonality, and warehouse constraints.</p>
+            <div class="tag-list"><span>TensorFlow</span><span>Python</span><span>GCP</span></div>
+            <ul class="result-list"><li>25% inventory optimization</li><li>18% fewer stockouts</li><li>7-week pilot launch</li></ul>
+            <blockquote>"The model gave planners a better starting point every week." <cite>Amara Patel, VP Digital</cite></blockquote>
+            <div class="rating" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <a class="btn secondary" href="#case-ai">View Case Study</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section muted" aria-labelledby="case-details-title">
+      <div class="section-heading">
+        <p class="eyebrow">Case Study Details</p>
+        <h2 id="case-details-title">Open a project to review the full delivery story.</h2>
+      </div>
+      <div class="accordion-list case-study-list">
+        <details id="case-ecommerce">
+          <summary>E-commerce Platform Redesign</summary>
+          <div class="case-study-body">
+            <p>The client needed to replace a brittle storefront before peak season. The existing platform had slow checkout, limited merchandising controls, and poor operational visibility. Stackly started with a two-week discovery sprint, mapped customer journeys, reviewed analytics, and prioritized the highest-impact revenue paths.</p>
+            <p>The solution combined a React frontend, Node.js commerce APIs, AWS hosting, managed caching, and a release pipeline with rollback controls. The implementation was delivered in four waves: foundation, catalog and search, checkout, and performance optimization. Each wave included QA, analytics validation, accessibility review, and stakeholder demos.</p>
+            <div class="case-metrics"><span>45% conversion lift</span><span>32% faster page loads</span><span>99.95% uptime</span></div>
+            <p>Related projects: Cloud Migration Initiative, Data Analytics Dashboard, AI/ML Implementation.</p>
+          </div>
+        </details>
+        <details id="case-cloud">
+          <summary>Cloud Migration Initiative</summary>
+          <div class="case-study-body">
+            <p>A financial services firm needed a controlled move from aging infrastructure to AWS while preserving compliance evidence. Stackly created a landing zone, implemented Terraform modules, containerized workloads, and migrated services in low-risk waves.</p>
+            <p>Risk mitigation included dependency mapping, data encryption validation, pilot workload testing, backup verification, and cutover rehearsals. The migration created a repeatable cloud operating model with cost dashboards and automated policy checks.</p>
+            <div class="case-metrics"><span>60% cost reduction</span><span>4-hour recovery target</span><span>Automated evidence</span></div>
+            <p>Related projects: Security Enhancement Project, Infrastructure Automation, Disaster Recovery &amp; Backup.</p>
+          </div>
+        </details>
+        <details id="case-analytics">
+          <summary>Data Analytics Dashboard</summary>
+          <div class="case-study-body">
+            <p>The manufacturing client was making production decisions from spreadsheets that lagged behind reality. Stackly designed a metric model, integrated ERP and machine data, and delivered dashboards for production managers, maintenance leaders, and executives.</p>
+            <p>The timeline covered discovery, data modeling, pipeline development, dashboard design, data validation, and enablement workshops. Real-time alerts highlighted bottlenecks before they disrupted output.</p>
+            <div class="case-metrics"><span>30% efficiency gain</span><span>12 data sources</span><span>Real-time dashboards</span></div>
+            <p>Related projects: Data Migration &amp; Integration, AI/ML Implementation, Database Management.</p>
+          </div>
+        </details>
+        <details id="case-security">
+          <summary>Security Enhancement Project</summary>
+          <div class="case-study-body">
+            <p>The healthcare provider needed stronger controls for patient data, audit evidence, and incident readiness. Stackly conducted a control assessment, implemented access review workflows, hardened network boundaries, and improved encryption coverage.</p>
+            <p>The project included control mapping, remediation sprints, tabletop incident exercises, security monitoring setup, and compliance documentation. Leadership received a risk dashboard that tracked evidence and ownership.</p>
+            <div class="case-metrics"><span>HIPAA compliance</span><span>82% fewer gaps</span><span>Incident playbooks</span></div>
+            <p>Related projects: Cloud Migration Initiative, Disaster Recovery &amp; Backup, Technical Support.</p>
+          </div>
+        </details>
+        <details id="case-mobile">
+          <summary>Mobile App Development</summary>
+          <div class="case-study-body">
+            <p>The SaaS client needed a mobile experience for customers who were previously relying on support tickets for routine account workflows. Stackly delivered product discovery, UX prototypes, API integration, React Native development, Firebase notifications, and app analytics.</p>
+            <p>The launch plan included beta testing, app store submission support, crash monitoring, customer onboarding, and release tracking. After launch, support tickets dropped as customers adopted self-service workflows.</p>
+            <div class="case-metrics"><span>100K+ downloads</span><span>4.8 rating</span><span>38% support deflection</span></div>
+            <p>Related projects: Custom Software Development, Data Analytics Dashboard, DevOps Automation.</p>
+          </div>
+        </details>
+        <details id="case-automation">
+          <summary>Infrastructure Automation</summary>
+          <div class="case-study-body">
+            <p>The startup's deployments depended on manual server changes and undocumented release checks. Stackly created a CI/CD architecture, containerized applications, added automated environment provisioning, and introduced release health dashboards.</p>
+            <p>The team shipped reusable pipeline templates, deployment documentation, and role-based release approval flows. Rollbacks became standard procedure instead of emergency improvisation.</p>
+            <div class="case-metrics"><span>80% faster deployment</span><span>Zero manual steps</span><span>Weekly releases</span></div>
+            <p>Related projects: Cloud Migration Initiative, Custom Software Development, Managed Services.</p>
+          </div>
+        </details>
+        <details id="case-data">
+          <summary>Data Migration &amp; Integration</summary>
+          <div class="case-study-body">
+            <p>The enterprise client needed to replace point-to-point integrations that were blocking modernization. Stackly designed a Kafka-backed integration layer, created validation tooling, mapped data contracts, and moved workloads through controlled cutover windows.</p>
+            <p>The migration approach emphasized replayable events, monitoring, reconciliation reports, and fallback plans. Business users saw no outage during the final transition.</p>
+            <div class="case-metrics"><span>Zero downtime</span><span>24 systems</span><span>99.99% reliability</span></div>
+            <p>Related projects: Database Management, Data Analytics Dashboard, Disaster Recovery.</p>
+          </div>
+        </details>
+        <details id="case-ai">
+          <summary>AI/ML Implementation</summary>
+          <div class="case-study-body">
+            <p>The retail chain wanted better inventory planning but did not have a governed model workflow. Stackly created a data preparation process, trained predictive models, built planner dashboards, and added controls for model monitoring and exception review.</p>
+            <p>The pilot focused on high-variance categories and expanded after planners validated the recommendations. The model did not replace planning judgment. It gave teams a stronger weekly forecast and clearer exception list.</p>
+            <div class="case-metrics"><span>25% optimization</span><span>18% fewer stockouts</span><span>7-week pilot</span></div>
+            <p>Related projects: Data Analytics Dashboard, Cloud Migration Initiative, Custom Software Development.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <a class="logo footer-logo" href="index.html"><span class="logo-mark">S</span><span>Stackly</span></a>
+      <p>Enterprise IT services, cloud migration, security, automation, and software delivery for ambitious teams.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="blog.html">Blog</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="copyright">(c) 2026 Stackly. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
