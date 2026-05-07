@@ -4,7 +4,10 @@ const sessionKey = "stacklyLoggedInUser";
 const profileStoreKey = "stacklyProfiles";
 
 document.addEventListener("DOMContentLoaded", () => {
+  setupPreloader();
   setupNavigation();
+  setupAnchorNavigation();
+  setupFooterYear();
   setupPasswordToggles();
   setupContactForm();
   setupSignupForm();
@@ -17,6 +20,20 @@ document.addEventListener("DOMContentLoaded", () => {
   setupHashDetails();
   setupShareButtons();
 });
+
+function setupPreloader() {
+  const preloader = document.getElementById("preloader");
+  if (!preloader) return;
+
+  const hidePreloader = () => {
+    document.body.classList.remove("preloader-active");
+    preloader.classList.add("preloader-hidden");
+    setTimeout(() => preloader.remove(), 400);
+  };
+
+  window.addEventListener("load", () => setTimeout(hidePreloader, 450), { once: true });
+  setTimeout(hidePreloader, 1600);
+}
 
 function setupNavigation() {
   const menuToggle = document.getElementById("menuToggle");
@@ -67,6 +84,44 @@ function setupNavigation() {
     <a class="login-link" href="login.html">Login</a>
     <a class="nav-cta" href="contact.html">Get Started</a>
   `;
+}
+
+function setupAnchorNavigation() {
+  const scrollToHash = (hash, updateHistory = true) => {
+    if (!hash || hash === "#") return false;
+
+    const target = document.getElementById(decodeURIComponent(hash.slice(1)));
+    if (!target) return false;
+
+    const parentDetails = target.tagName.toLowerCase() === "details" ? target : target.closest("details");
+    if (parentDetails) parentDetails.open = true;
+
+    const header = document.querySelector(".site-header");
+    const headerOffset = header ? header.offsetHeight + 18 : 18;
+    const top = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+
+    window.scrollTo({ top, behavior: "smooth" });
+    if (updateHistory) history.pushState(null, "", hash);
+    return true;
+  };
+
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", (event) => {
+      if (scrollToHash(link.getAttribute("href"))) event.preventDefault();
+    });
+  });
+
+  if (window.location.hash) {
+    setTimeout(() => scrollToHash(window.location.hash, false), 80);
+  }
+
+  window.addEventListener("hashchange", () => scrollToHash(window.location.hash, false));
+}
+
+function setupFooterYear() {
+  document.querySelectorAll("#year").forEach((item) => {
+    item.textContent = new Date().getFullYear();
+  });
 }
 
 function closeMenu(menuToggle, navMenu) {
@@ -120,6 +175,7 @@ function setupContactForm() {
     const message = document.getElementById("contactMessage");
     const recaptcha = document.getElementById("recaptchaCheck");
     const status = document.getElementById("contactStatus");
+    const submitButton = form.querySelector('button[type="submit"]');
 
     clearFormErrors(form);
     if (status) {
@@ -167,11 +223,27 @@ function setupContactForm() {
       return;
     }
 
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = "Sending...";
+    }
+
     if (status) {
       status.style.color = "var(--success)";
-      status.textContent = `Message sent successfully. A confirmation email has been prepared for ${email.value.trim()}.`;
+      status.textContent = "Sending your request...";
     }
-    form.reset();
+
+    setTimeout(() => {
+      if (status) {
+        status.style.color = "var(--success)";
+        status.textContent = `Message sent successfully. A confirmation email has been prepared for ${email.value.trim()}.`;
+      }
+      form.reset();
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = "Send Message";
+      }
+    }, 450);
   });
 }
 
@@ -542,12 +614,11 @@ function setupPricingToggle() {
 function setupHashDetails() {
   const openTarget = () => {
     if (!window.location.hash) return;
-    const target = document.querySelector(window.location.hash);
+    const target = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
     if (!target) return;
 
     if (target.tagName.toLowerCase() === "details") {
       target.open = true;
-      setTimeout(() => target.scrollIntoView({ behavior: "smooth", block: "start" }), 40);
     }
   };
 

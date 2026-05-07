@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setupPricingToggle();
   setupHashDetails();
   setupShareButtons();
+  setupScrollAnimations();
 });
 
 function setupNavigation() {
@@ -683,5 +684,61 @@ function escapeHtml(value) {
       "'": "&#039;"
     };
     return replacements[character];
+  });
+}
+
+function setupScrollAnimations() {
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Add animation classes to elements
+  document.querySelectorAll('.engagement-copy').forEach(el => {
+    el.classList.add('animate-slide-left');
+    observer.observe(el);
+  });
+
+  document.querySelectorAll('.engagement-image').forEach(el => {
+    el.classList.add('animate-slide-right');
+    observer.observe(el);
+  });
+
+  document.querySelectorAll('.testimonial-card, .rich-card, .portfolio-card, .blog-card').forEach(el => {
+    el.classList.add('animate-fade-up');
+    observer.observe(el);
+  });
+
+  // Parallax effect for hero image
+  const heroImage = document.querySelector('.hero-media img');
+  if (heroImage) {
+    heroImage.classList.add('parallax-hero');
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const rate = scrolled * -0.5;
+      heroImage.style.transform = `translateY(${rate}px)`;
+    });
+  }
+
+  // Zoom effect for images
+  document.querySelectorAll('img').forEach(img => {
+    img.classList.add('zoom-image');
+    img.addEventListener('scroll', () => {
+      const rect = img.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+      if (isVisible) {
+        const scrollPercent = (window.innerHeight - rect.top) / window.innerHeight;
+        img.style.transform = `scale(${1 + scrollPercent * 0.05})`;
+      }
+    });
   });
 }
